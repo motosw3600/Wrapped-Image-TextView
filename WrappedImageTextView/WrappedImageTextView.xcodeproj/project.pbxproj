@@ -14,9 +14,12 @@
 		E9E5376328F400D10051E573 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E5376128F400D10051E573 /* Main.storyboard */; };
 		E9E5376528F400D30051E573 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E5376428F400D30051E573 /* Assets.xcassets */; };
 		E9E5376828F400D30051E573 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E5376628F400D30051E573 /* LaunchScreen.storyboard */; };
+		FD42F4EF04016CA7E6A75B37 /* Pods_WrappedImageTextView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA74E0DE89DB158500EE2F02 /* Pods_WrappedImageTextView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		324B3A4D64F3B03E6B818187 /* Pods-WrappedImageTextView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WrappedImageTextView.debug.xcconfig"; path = "Target Support Files/Pods-WrappedImageTextView/Pods-WrappedImageTextView.debug.xcconfig"; sourceTree = "<group>"; };
+		D8BDCDC959A5B5F448713704 /* Pods-WrappedImageTextView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WrappedImageTextView.release.xcconfig"; path = "Target Support Files/Pods-WrappedImageTextView/Pods-WrappedImageTextView.release.xcconfig"; sourceTree = "<group>"; };
 		E94DA47728F4030D004346A7 /* WrappedImageTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedImageTextView.swift; sourceTree = "<group>"; };
 		E9E5375828F400D10051E573 /* WrappedImageTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WrappedImageTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E5375B28F400D10051E573 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		E9E5376428F400D30051E573 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9E5376728F400D30051E573 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9E5376928F400D30051E573 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA74E0DE89DB158500EE2F02 /* Pods_WrappedImageTextView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WrappedImageTextView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD42F4EF04016CA7E6A75B37 /* Pods_WrappedImageTextView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2377E4E62F9989D8DF3E3DB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				324B3A4D64F3B03E6B818187 /* Pods-WrappedImageTextView.debug.xcconfig */,
+				D8BDCDC959A5B5F448713704 /* Pods-WrappedImageTextView.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		59A33619EFC4E48CEABC8EEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA74E0DE89DB158500EE2F02 /* Pods_WrappedImageTextView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E9E5374F28F400D10051E573 = {
 			isa = PBXGroup;
 			children = (
 				E9E5375A28F400D10051E573 /* WrappedImageTextView */,
 				E9E5375928F400D10051E573 /* Products */,
+				2377E4E62F9989D8DF3E3DB2 /* Pods */,
+				59A33619EFC4E48CEABC8EEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,9 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9E5376C28F400D30051E573 /* Build configuration list for PBXNativeTarget "WrappedImageTextView" */;
 			buildPhases = (
+				E03C9B8013F8E25BFFBC6C69 /* [CP] Check Pods Manifest.lock */,
 				E9E5375428F400D10051E573 /* Sources */,
 				E9E5375528F400D10051E573 /* Frameworks */,
 				E9E5375628F400D10051E573 /* Resources */,
+				F8CDE73D61A0BD06CE7C2937 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +178,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E03C9B8013F8E25BFFBC6C69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WrappedImageTextView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8CDE73D61A0BD06CE7C2937 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WrappedImageTextView/Pods-WrappedImageTextView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WrappedImageTextView/Pods-WrappedImageTextView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WrappedImageTextView/Pods-WrappedImageTextView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E9E5375428F400D10051E573 /* Sources */ = {
@@ -302,6 +371,7 @@
 		};
 		E9E5376D28F400D30051E573 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 324B3A4D64F3B03E6B818187 /* Pods-WrappedImageTextView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -329,6 +399,7 @@
 		};
 		E9E5376E28F400D30051E573 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8BDCDC959A5B5F448713704 /* Pods-WrappedImageTextView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
